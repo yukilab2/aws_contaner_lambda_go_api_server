@@ -69,4 +69,4 @@ deploy-terraform:
 # APIをテスト
 test-api:
 	@echo "Testing API..."
-	curl -s $(shell cd terraform && terraform output -raw api_endpoint) 
+	curl -s $(shell cd terraform && terraform output -raw lambda_url) 
